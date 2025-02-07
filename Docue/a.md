@@ -13,3 +13,5 @@ Icon has most general and most level color saturate.
 Icon has most general and most level object.
 
 Icon has most general and most level index.
+
+Icon has most general and most level category.
