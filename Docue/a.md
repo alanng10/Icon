@@ -18,6 +18,12 @@ Icon has most general and most level index arch.
 
 Icon has most general and most level index arch worth.
 
+Icon has most general and most level index value.
+
+Icon has most general and most level index value arch.
+
+Icon has most general and most level index value arch worth.
+
 Icon has most general and most level category.
 
 Icon has most general and most level theme set.
