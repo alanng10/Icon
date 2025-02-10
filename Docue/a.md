@@ -27,3 +27,5 @@ Icon has most general and most level detail.
 Icon has most general and most level storage path.
 
 Icon has most general and most level format.
+
+Icon can be ultimate icon.
