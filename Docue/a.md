@@ -22,6 +22,10 @@ Icon has most general and most level marry baseline.
 
 Icon has most general and most level marry cap limit.
 
+Icon has most general and most level marry arch.
+
+Icon has most general and most level marry arch worth.
+
 Icon has most general and most level detail.
 
 Icon has most general and most level storage path.
