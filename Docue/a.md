@@ -42,6 +42,6 @@ Icon has most general and most level storage path.
 
 Icon has most general and most level format.
 
-Icon can be ultimate icon.
+Icon can be park icon.
 
-Icon has ultimate marry baseline.
+Icon has park marry baseline.
