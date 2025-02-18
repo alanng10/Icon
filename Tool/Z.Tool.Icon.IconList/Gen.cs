@@ -48,10 +48,18 @@ public class Gen : SourceGen
                 String index;
                 index = this.StringCreateRange(fileName, 0, this.StringCount(fileName) - this.StringCount(suffix));
 
-                if (!this.ItemTable.Valid(index))
+                Value value;
+                value = this.ItemTable.Get(index) as Value;
+                
+                if (value == null)
                 {
-                    this.ListInfra.TableAdd(this.ItemTable, index, index);
+                    value = new Value();
+                    value.Init();
+
+                    this.ListInfra.TableAdd(this.ItemTable, index, value);
                 }
+
+                value.Has032 = true;
             }
 
             i = i + 1;
@@ -63,7 +71,16 @@ public class Gen : SourceGen
 
     protected override bool AddInitFieldAddItem(String index, object value)
     {
-        this.AddS("AddItem").AddS("(").AddS("\"").Add(index).AddS("\"").AddS(")");
+        Value ka;
+        ka = value as Value;
+
+        this.AddS("AddItem").AddS("(").AddS("\"").Add(index).AddS("\"")
+            .AddS(", ").Add(this.ToolInfra.StringBool(ka.Has016))
+            .AddS(", ").Add(this.ToolInfra.StringBool(ka.Has032))
+            .AddS(", ").Add(this.ToolInfra.StringBool(ka.Has064))
+            .AddS(", ").Add(this.ToolInfra.StringBool(ka.Has128))
+            .AddS(", ").Add(this.ToolInfra.StringBool(ka.Has256))
+        .AddS(")");
         return true;
     }
 }
