@@ -26,6 +26,9 @@ public class Gen : SourceGen
     {
         this.ItemTable = this.ToolInfra.TableCreateStringLess();
 
+        String suffix;
+        suffix = this.S(".png");
+
         Array array032;
         array032 = this.StorageComp.EntryList(this.S("../../../Crystal/032"), false);
 
@@ -39,10 +42,26 @@ public class Gen : SourceGen
             String fileName;
             fileName = array032.GetAt(i) as String;
 
+            if (this.TextEnd(this.TextAlphaSite(this.TA(fileName)), this.TB(suffix)))
+            {
+                String index;
+                index = this.StringCreateRange(fileName, 0, this.StringCount(fileName) - this.StringCount(suffix));
+
+                if (!this.ItemTable.Valid(index))
+                {
+                    this.ListInfra.TableAdd(this.ItemTable, index, index);
+                }
+            }
+
             i = i + 1;
         }
 
+        return true;
+    }
 
+    protected override bool AddInitFieldAddItem(String index, object value)
+    {
+        this.AddS("AddItem").AddS("(").AddS("\"").Add(index).AddS("\"").AddS(")");
         return true;
     }
 }
