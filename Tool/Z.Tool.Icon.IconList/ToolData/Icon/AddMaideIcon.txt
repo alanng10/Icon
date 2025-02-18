@@ -1,4 +1,4 @@
-    maide precate #ItemClassName# AddItem(var String name)
+    maide precate #ItemClassName# AddItem(var String name, var Bool has016, var Bool has032, var Bool has064, var Bool has128, var Bool has256)
     {
         var #ItemClassName# item;
         item : new #ItemClassName#;
