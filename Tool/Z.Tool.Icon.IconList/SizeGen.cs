@@ -1,6 +1,6 @@
 namespace Z.Tool.Icon.IconList;
 
-class ArraySizeGen : ToolBase
+class SizeGen : ToolBase
 {
     public virtual Table IconTable { get; set; }
     public virtual String ClassName { get; set; }
