@@ -3,6 +3,8 @@ namespace Z.Tool.Icon.IconList;
 class ArraySizeGen : ToolBase
 {
     public virtual Table IconTable { get; set; }
+    public virtual String ClassName { get; set; }
+    public virtual String ArraySizeText { get; set; }
 
     public virtual bool Execute()
     {
@@ -27,7 +29,8 @@ class ArraySizeGen : ToolBase
         String ka;
         ka = this.StringInt(this.IconTable.Count);
 
-        
+        this.Replace()
+
 
         return true;
     }
