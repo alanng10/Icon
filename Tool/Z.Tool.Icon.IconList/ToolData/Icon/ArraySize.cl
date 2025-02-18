@@ -1,4 +1,4 @@
-class Array032 : Array
+class #ClassName# : Array
 {
     maide prusate Bool Init()
     {
