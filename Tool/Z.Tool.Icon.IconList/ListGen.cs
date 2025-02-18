@@ -1,6 +1,6 @@
 namespace Z.Tool.Icon.IconList;
 
-public class ListGen : SourceGen
+public class Gen : SourceGen
 {
     public override bool Init()
     {
