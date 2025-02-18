@@ -20,9 +20,8 @@ public class Gen : SourceGen
         return true;
     }
 
-    protected virtual StorageComp StorageComp { get; set; }
-
     public virtual Table IconTable { get; set; }
+    protected virtual StorageComp StorageComp { get; set; }
 
     protected override bool ExecuteItemList()
     {
@@ -58,6 +57,7 @@ public class Gen : SourceGen
             i = i + 1;
         }
 
+        this.IconTable = this.ItemTable;
         return true;
     }
 
