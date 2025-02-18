@@ -5,6 +5,11 @@
         item.Init();
         item.Index : this.Index;
         item.Name : name;
+        item.Has016 : has016;
+        item.Has032 : has032;
+        item.Has064 : has064;
+        item.Has128 : has128;
+        item.Has256 : has256;
         this.Array.Set(item.Index, item);
         this.Index : this.Index + 1;
         return item;
