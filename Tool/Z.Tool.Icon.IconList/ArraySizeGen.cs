@@ -33,8 +33,9 @@ class ArraySizeGen : ToolBase
         Text k;
         k = this.TextCreate(this.ArraySizeText);
 
-        k = this.Place(k, "Count", ka);
-        k = this.Place(k, "AddItemList", kk);
+        k = this.Place(k, "#ClassName#", this.ClassName);
+        k = this.Place(k, "#Count#", ka);
+        k = this.Place(k, "#AddItemList#", kk);
 
         String a;
         a = this.StringCreate(k);
