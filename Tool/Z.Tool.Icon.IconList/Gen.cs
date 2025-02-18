@@ -20,7 +20,6 @@ public class Gen : SourceGen
         return true;
     }
 
-    public virtual Table IconTable { get; set; }
     protected virtual StorageComp StorageComp { get; set; }
 
     protected override bool ExecuteItemList()
@@ -30,18 +29,18 @@ public class Gen : SourceGen
         String suffix;
         suffix = this.S(".png");
 
-        Array array032;
-        array032 = this.StorageComp.EntryList(this.S("../../../Crystal/032"), false);
+        Array array;
+        array = this.StorageComp.EntryList(this.S("../../../Crystal/032"), false);
 
         long count;
-        count = array032.Count;
+        count = array.Count;
 
         long i;
         i = 0;
         while (i < count)
         {
             String fileName;
-            fileName = array032.GetAt(i) as String;
+            fileName = array.GetAt(i) as String;
 
             if (this.TextEnd(this.TextAlphaSite(this.TA(fileName)), this.TB(suffix)))
             {
@@ -64,8 +63,6 @@ public class Gen : SourceGen
 
             i = i + 1;
         }
-
-        this.IconTable = this.ItemTable;
         return true;
     }
 
