@@ -1,4 +1,4 @@
-class #ClassName# : Array
+class #ClassName# : ArraySize
 {
     maide prusate Bool Init()
     {
@@ -12,5 +12,6 @@ class #ClassName# : Array
 
     maide precate Bool AddItemList()
     {
-#AddItemList#    }
+#AddItemList#        return true;
+    }
 }
