@@ -22,6 +22,8 @@ public class Gen : SourceGen
 
     protected virtual StorageComp StorageComp { get; set; }
 
+    public virtual Table IconTable { get; set; }
+
     protected override bool ExecuteItemList()
     {
         this.ItemTable = this.ToolInfra.TableCreateStringLess();
