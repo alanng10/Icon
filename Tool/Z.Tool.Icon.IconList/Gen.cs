@@ -101,6 +101,70 @@ public class Gen : SourceGen
             i = i + 1;
         }
 
+        this.SortItemTable();
+
+        return true;
+    }
+
+    protected virtual bool SortItemTable()
+    {
+        Iter iter;
+        iter = this.ItemTable.IterCreate();
+        this.ItemTable.IterSet(iter);
+
+        long count;
+        count = this.ItemTable.Count;
+
+        this.Array = this.ListInfra.ArrayCreate(count);
+        this.ArrayIndex = 0;
+
+        long i;
+        i = 0;
+
+        while (i < count)
+        {
+            iter.Next();
+
+            String ka;
+            ka = iter.Index as String;
+
+            this.ArrayAdd(ka);
+
+            i = i + 1;
+        }
+
+        Less less;
+        less = this.TextInfra.StringLessCreate();
+
+        Range range;
+        range = new Range();
+        range.Init();
+        range.Count = count;
+
+        Array copy;
+        copy = this.ListInfra.ArrayCreate(count);
+
+        this.ListInfra.Sort(this.Array, less, range, copy);
+
+        Table table;
+        table = this.ToolInfra.TableCreateStringLess();
+
+        i = 0;
+
+        while (i < count)
+        {
+            String kk;
+            kk = this.Array.GetAt(i) as String;
+
+            object value;
+            value = this.ItemTable.Get(kk);
+
+            this.ListInfra.TableAdd(table, kk, value);
+
+            i = i + 1;
+        }
+
+        this.ItemTable = table;
         return true;
     }
 
