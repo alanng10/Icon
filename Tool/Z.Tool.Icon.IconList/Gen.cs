@@ -42,6 +42,8 @@ public class Gen : SourceGen
         this.ArrayAdd(this.S("128"));
         this.ArrayAdd(this.S("256"));
 
+        this.Array = null;
+
         long count;
         count = sizeArray.Count;
 
@@ -115,7 +117,10 @@ public class Gen : SourceGen
         long count;
         count = this.ItemTable.Count;
 
-        this.Array = this.ListInfra.ArrayCreate(count);
+        Array array;
+        array = this.ListInfra.ArrayCreate(count);
+        
+        this.Array = array;
         this.ArrayIndex = 0;
 
         long i;
@@ -133,6 +138,8 @@ public class Gen : SourceGen
             i = i + 1;
         }
 
+        this.Array = null;
+
         Less less;
         less = this.TextInfra.StringLessCreate();
 
@@ -144,7 +151,7 @@ public class Gen : SourceGen
         Array copy;
         copy = this.ListInfra.ArrayCreate(count);
 
-        this.ListInfra.Sort(this.Array, less, range, copy);
+        this.ListInfra.Sort(array, less, range, copy);
 
         Table table;
         table = this.ToolInfra.TableCreateStringLess();
@@ -154,10 +161,10 @@ public class Gen : SourceGen
         while (i < count)
         {
             String kk;
-            kk = this.Array.GetAt(i) as String;
+            kk = array.GetAt(i) as String;
 
-            object value;
-            value = this.ItemTable.Get(kk);
+            Value value;
+            value = this.ItemTable.Get(kk) as Value;
 
             this.ListInfra.TableAdd(table, kk, value);
 
