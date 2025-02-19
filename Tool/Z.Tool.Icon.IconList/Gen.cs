@@ -35,11 +35,11 @@ public class Gen : SourceGen
         sizeArray = this.ListInfra.ArrayCreate(5);
 
         this.Array = sizeArray;
-        this.ArrayAdd("016");
-        this.ArrayAdd("032");
-        this.ArrayAdd("064");
-        this.ArrayAdd("128");
-        this.ArrayAdd("256");
+        this.ArrayAdd(this.S("016"));
+        this.ArrayAdd(this.S("032"));
+        this.ArrayAdd(this.S("064"));
+        this.ArrayAdd(this.S("128"));
+        this.ArrayAdd(this.S("256"));
 
         long count;
         count = sizeArray.Count;
@@ -49,8 +49,14 @@ public class Gen : SourceGen
 
         while (i < count)
         {
+            String size;
+            size = sizeArray.GetAt(i) as String;
+
+            String foldPath;
+            foldPath = this.AddClear().AddS("../../../Crystal/").Add(size).AddResult();
+
             Array array;
-            array = this.StorageComp.EntryList(this.S("../../../Crystal/032"), false);
+            array = this.StorageComp.EntryList(foldPath, false);
 
             long countA;
             countA = array.Count;
