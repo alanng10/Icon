@@ -21,6 +21,8 @@ public class Gen : SourceGen
     }
 
     protected virtual StorageComp StorageComp { get; set; }
+    protected virtual long ArrayIndex { get; set; }
+    protected virtual Array Array { get; set; }
 
     protected override bool ExecuteItemList()
     {
@@ -29,40 +31,69 @@ public class Gen : SourceGen
         String suffix;
         suffix = this.S(".png");
 
-        Array array;
-        array = this.StorageComp.EntryList(this.S("../../../Crystal/032"), false);
+        Array sizeArray;
+        sizeArray = this.ListInfra.ArrayCreate(5);
+
+        this.Array = sizeArray;
+        this.ArrayAdd("016");
+        this.ArrayAdd("032");
+        this.ArrayAdd("064");
+        this.ArrayAdd("128");
+        this.ArrayAdd("256");
 
         long count;
-        count = array.Count;
+        count = sizeArray.Count;
 
         long i;
         i = 0;
+
         while (i < count)
         {
-            String fileName;
-            fileName = array.GetAt(i) as String;
+            Array array;
+            array = this.StorageComp.EntryList(this.S("../../../Crystal/032"), false);
 
-            if (this.TextEnd(this.TextAlphaSite(this.TA(fileName)), this.TB(suffix)))
+            long countA;
+            countA = array.Count;
+
+            long iA;
+            iA = 0;
+            while (iA < countA)
             {
-                String index;
-                index = this.StringCreateRange(fileName, 0, this.StringCount(fileName) - this.StringCount(suffix));
+                String fileName;
+                fileName = array.GetAt(iA) as String;
 
-                Value value;
-                value = this.ItemTable.Get(index) as Value;
-                
-                if (value == null)
+                if (this.TextEnd(this.TextAlphaSite(this.TA(fileName)), this.TB(suffix)))
                 {
-                    value = new Value();
-                    value.Init();
+                    String index;
+                    index = this.StringCreateRange(fileName, 0, this.StringCount(fileName) - this.StringCount(suffix));
 
-                    this.ListInfra.TableAdd(this.ItemTable, index, value);
+                    Value value;
+                    value = this.ItemTable.Get(index) as Value;
+
+                    if (value == null)
+                    {
+                        value = new Value();
+                        value.Init();
+
+                        Data data;
+                        data = new Data();
+                        data.Count = 5;
+                        data.Init();
+
+                        value.Has = data;
+
+                        this.ListInfra.TableAdd(this.ItemTable, index, value);
+                    }
+
+                    value.Has.Set(i, 1);
                 }
 
-                value.Has032 = true;
+                iA = iA + 1;
             }
 
             i = i + 1;
         }
+
         return true;
     }
 
@@ -71,13 +102,31 @@ public class Gen : SourceGen
         Value ka;
         ka = value as Value;
 
-        this.AddS("AddItem").AddS("(").AddS("\"").Add(index).AddS("\"")
-            .AddS(", ").Add(this.ToolInfra.StringBool(ka.Has016))
-            .AddS(", ").Add(this.ToolInfra.StringBool(ka.Has032))
-            .AddS(", ").Add(this.ToolInfra.StringBool(ka.Has064))
-            .AddS(", ").Add(this.ToolInfra.StringBool(ka.Has128))
-            .AddS(", ").Add(this.ToolInfra.StringBool(ka.Has256))
-        .AddS(")");
+        this.AddS("AddItem").AddS("(").AddS("\"").Add(index).AddS("\"");
+
+        long count;
+        count = ka.Has.Count;
+
+        long i;
+        i = 0;
+        while (i < count)
+        {
+            bool b;
+            b = !(ka.Has.Get(i) == 0);
+
+            this.AddS(", ").Add(this.ToolInfra.StringBool(b));
+
+            i = i + 1;
+        }
+
+        this.AddS(")");
+        return true;
+    }
+
+    protected virtual bool ArrayAdd(object item)
+    {
+        this.Array.SetAt(this.ArrayIndex, item);
+        this.ArrayIndex = this.ArrayIndex + 1;
         return true;
     }
 }
