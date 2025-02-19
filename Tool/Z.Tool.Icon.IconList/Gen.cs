@@ -84,7 +84,7 @@ public class Gen : SourceGen
 
                         Data data;
                         data = new Data();
-                        data.Count = 5;
+                        data.Count = count;
                         data.Init();
 
                         value.Has = data;
