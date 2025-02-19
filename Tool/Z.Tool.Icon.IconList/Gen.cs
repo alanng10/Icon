@@ -36,6 +36,7 @@ public class Gen : SourceGen
 
         this.Array = sizeArray;
         this.ArrayIndex = 0;
+
         this.ArrayAdd(this.S("016"));
         this.ArrayAdd(this.S("032"));
         this.ArrayAdd(this.S("064"));
