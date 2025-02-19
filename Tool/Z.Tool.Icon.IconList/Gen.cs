@@ -21,8 +21,8 @@ public class Gen : SourceGen
     }
 
     protected virtual StorageComp StorageComp { get; set; }
-    protected virtual long ArrayIndex { get; set; }
     protected virtual Array Array { get; set; }
+    protected virtual long ArrayIndex { get; set; }
 
     protected override bool ExecuteItemList()
     {
@@ -35,6 +35,7 @@ public class Gen : SourceGen
         sizeArray = this.ListInfra.ArrayCreate(5);
 
         this.Array = sizeArray;
+        this.ArrayIndex = 0;
         this.ArrayAdd(this.S("016"));
         this.ArrayAdd(this.S("032"));
         this.ArrayAdd(this.S("064"));
