@@ -44,7 +44,7 @@ class IconList : Any
         this.FileKindShell : this.AddItem("FileKindShell", false, true, false, false, false);
         this.FileKindText : this.AddItem("FileKindText", false, true, false, false, false);
         this.FileKindXml : this.AddItem("FileKindXml", true, true, false, false, false);
-        this.Find : this.AddItem("Find", true, false, false, false, false);
+        this.Find : this.AddItem("Find", true, true, false, false, false);
         this.Fold : this.AddItem("Fold", true, false, false, false, false);
         this.FoldExecute : this.AddItem("FoldExecute", true, true, false, false, false);
         this.FoldNew : this.AddItem("FoldNew", false, true, false, false, false);
@@ -103,6 +103,7 @@ class IconList : Any
         this.KindOffice : this.AddItem("KindOffice", false, true, false, false, false);
         this.KindScience : this.AddItem("KindScience", false, true, false, false, false);
         this.KindVisual : this.AddItem("KindVisual", false, true, false, false, false);
+        this.List : this.AddItem("List", true, false, false, false, false);
         this.Make : this.AddItem("Make", false, true, false, false, false);
         this.Media : this.AddItem("Media", true, true, false, false, false);
         this.MediaEject : this.AddItem("MediaEject", false, true, false, false, false);
@@ -275,6 +276,7 @@ class IconList : Any
     field prusate Icon KindOffice { get { return data; } set { data : value; } }
     field prusate Icon KindScience { get { return data; } set { data : value; } }
     field prusate Icon KindVisual { get { return data; } set { data : value; } }
+    field prusate Icon List { get { return data; } set { data : value; } }
     field prusate Icon Make { get { return data; } set { data : value; } }
     field prusate Icon Media { get { return data; } set { data : value; } }
     field prusate Icon MediaEject { get { return data; } set { data : value; } }
@@ -376,7 +378,7 @@ class IconList : Any
 
     field precate Array Array { get { return data; } set { data : value; } }
 
-    field precate Int ArrayCount { get { return 169; } set { } }
+    field precate Int ArrayCount { get { return 170; } set { } }
 
     field prusate Int Count { get { return data; } set { data : value; } }
 
