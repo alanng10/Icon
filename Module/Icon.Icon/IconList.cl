@@ -94,6 +94,7 @@ class IconList : Any
         this.GridShownRow : this.AddItem("GridShownRow", true, false, false, false, false);
         this.History : this.AddItem("History", true, false, false, false, false);
         this.Home : this.AddItem("Home", true, true, true, false, false);
+        this.Info : this.AddItem("Info", true, true, false, false, false);
         this.Item : this.AddItem("Item", true, false, false, false, false);
         this.ItemAdd : this.AddItem("ItemAdd", true, true, false, false, false);
         this.ItemMod : this.AddItem("ItemMod", true, true, false, false, false);
@@ -165,10 +166,11 @@ class IconList : Any
         this.ViewDefaultNew : this.AddItem("ViewDefaultNew", true, true, false, false, false);
         this.ViewDetail : this.AddItem("ViewDetail", true, true, false, false, false);
         this.ViewFull : this.AddItem("ViewFull", false, true, false, false, false);
-        this.ViewFullScreen : this.AddItem("ViewFullScreen", true, false, false, false, false);
+        this.ViewFullS : this.AddItem("ViewFullS", true, false, false, false, false);
         this.ViewGrid : this.AddItem("ViewGrid", true, true, false, false, false);
         this.ViewNew : this.AddItem("ViewNew", true, true, false, false, false);
-        this.ViewRestore : this.AddItem("ViewRestore", true, true, false, false, false);
+        this.ViewRestore : this.AddItem("ViewRestore", false, true, false, false, false);
+        this.ViewRestoreS : this.AddItem("ViewRestoreS", true, false, false, false, false);
         this.ViewSide : this.AddItem("ViewSide", true, false, false, false, false);
         this.ViewText : this.AddItem("ViewText", true, true, false, false, false);
         this.ViewTree : this.AddItem("ViewTree", true, true, false, false, false);
@@ -267,6 +269,7 @@ class IconList : Any
     field prusate Icon GridShownRow { get { return data; } set { data : value; } }
     field prusate Icon History { get { return data; } set { data : value; } }
     field prusate Icon Home { get { return data; } set { data : value; } }
+    field prusate Icon Info { get { return data; } set { data : value; } }
     field prusate Icon Item { get { return data; } set { data : value; } }
     field prusate Icon ItemAdd { get { return data; } set { data : value; } }
     field prusate Icon ItemMod { get { return data; } set { data : value; } }
@@ -338,10 +341,11 @@ class IconList : Any
     field prusate Icon ViewDefaultNew { get { return data; } set { data : value; } }
     field prusate Icon ViewDetail { get { return data; } set { data : value; } }
     field prusate Icon ViewFull { get { return data; } set { data : value; } }
-    field prusate Icon ViewFullScreen { get { return data; } set { data : value; } }
+    field prusate Icon ViewFullS { get { return data; } set { data : value; } }
     field prusate Icon ViewGrid { get { return data; } set { data : value; } }
     field prusate Icon ViewNew { get { return data; } set { data : value; } }
     field prusate Icon ViewRestore { get { return data; } set { data : value; } }
+    field prusate Icon ViewRestoreS { get { return data; } set { data : value; } }
     field prusate Icon ViewSide { get { return data; } set { data : value; } }
     field prusate Icon ViewText { get { return data; } set { data : value; } }
     field prusate Icon ViewTree { get { return data; } set { data : value; } }
@@ -378,7 +382,7 @@ class IconList : Any
 
     field precate Array Array { get { return data; } set { data : value; } }
 
-    field precate Int ArrayCount { get { return 170; } set { } }
+    field precate Int ArrayCount { get { return 172; } set { } }
 
     field prusate Int Count { get { return data; } set { data : value; } }
 
