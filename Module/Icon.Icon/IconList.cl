@@ -24,7 +24,7 @@ class IconList : Any
         this.Copy : this.AddItem("Copy", true, true, false, false, false);
         this.Cute : this.AddItem("Cute", true, true, false, false, false);
         this.Desktop : this.AddItem("Desktop", false, true, false, false, false);
-        this.DialogClose : this.AddItem("DialogClose", false, true, false, false, false);
+        this.DialogClose : this.AddItem("DialogClose", true, true, false, false, false);
         this.DialogExecute : this.AddItem("DialogExecute", true, true, false, false, false);
         this.Diff : this.AddItem("Diff", true, false, false, false, false);
         this.Docue : this.AddItem("Docue", true, true, false, false, false);
