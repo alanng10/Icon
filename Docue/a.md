@@ -50,19 +50,19 @@ Icon has park kind benefit.
 
 Icon has park kind marry.
 
-Icon has park theme set.
+Icon has park theme.
 
-Icon has park theme set arch.
+Icon has park theme arch.
 
-Icon has park theme set arch worth.
+Icon has park theme arch worth.
 
-Icon has park theme set worth.
+Icon has park theme worth.
 
-Icon has park theme set value.
+Icon has park theme value.
 
-Icon has park theme set benefit.
+Icon has park theme benefit.
 
-Icon has park theme set marry.
+Icon has park theme marry.
 
 Icon has park detail.
 
