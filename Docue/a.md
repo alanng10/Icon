@@ -28,7 +28,7 @@ Icon has park index arch.
 
 Icon has park index arch worth.
 
-Icon has park index value. 
+Icon has park index value.
 
 Icon has park kind.
 
