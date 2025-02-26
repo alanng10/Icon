@@ -8,11 +8,7 @@ Icon has park value.
 
 Icon has park benefit.
 
-Icon has park marry. 
-
-Icon has park marry baseline.
-
-Icon has park marry cap limit.
+Icon has park marry.
 
 Icon has park arch.
 
