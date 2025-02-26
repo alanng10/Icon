@@ -22,8 +22,6 @@ Icon has park color hue.
 
 Icon has park color saturate.
 
-Icon has park object.
-
 Icon has park index.
 
 Icon has park index arch.
