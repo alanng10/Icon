@@ -20,15 +20,27 @@ Icon has park index arch worth.
 
 Icon has park index value.
 
-Icon has park category.
+Icon has park kind.
 
-Icon has park theme set.
+Icon has park kind arch.
+
+Icon has park kind arch worth.
+
+Icon has park kind worth.
+
+Icon has park kind value.
+
+Icon has park kind benefit.
+
+Icon has park kind marry.
 
 Icon has park marry.
 
 Icon has park marry baseline.
 
 Icon has park marry cap limit.
+
+Icon has park theme set. 
 
 Icon has park theme set arch.
 
