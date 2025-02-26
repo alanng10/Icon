@@ -40,7 +40,7 @@ Icon has park marry baseline.
 
 Icon has park marry cap limit.
 
-Icon has park theme set. 
+Icon has park theme set.
 
 Icon has park theme set arch.
 
