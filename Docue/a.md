@@ -2,6 +2,22 @@
 
 Icon can be park icon.
 
+Icon has park worth.
+
+Icon has park value.
+
+Icon has park benefit.
+
+Icon has park marry. 
+
+Icon has park marry baseline.
+
+Icon has park marry cap limit.
+
+Icon has park arch.
+
+Icon has park arch worth.
+
 Icon has park size list.
 
 Icon has park color.
@@ -33,12 +49,6 @@ Icon has park kind value.
 Icon has park kind benefit.
 
 Icon has park kind marry.
-
-Icon has park marry.
-
-Icon has park marry baseline.
-
-Icon has park marry cap limit.
 
 Icon has park theme set.
 
