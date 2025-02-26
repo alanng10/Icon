@@ -22,13 +22,19 @@ Icon has park color hue.
 
 Icon has park color saturate.
 
-Icon has park index.
+Icon has park index. 
 
-Icon has park index arch.
-
-Icon has park index arch worth.
+Icon has park index worth.
 
 Icon has park index value.
+
+Icon has park index benefit.
+
+Icon has park index marry.
+
+Icon has park index arch. 
+
+Icon has park index arch worth. 
 
 Icon has park kind.
 
