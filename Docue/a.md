@@ -34,6 +34,8 @@ Icon has park index benefit.
 
 Icon has park index marry.
 
+Icon has park index land.
+
 Icon has park index arch.
 
 Icon has park index arch worth.
@@ -48,6 +50,8 @@ Icon has park kind benefit.
 
 Icon has park kind marry.
 
+Icon has park kind land.
+
 Icon has park kind arch.
 
 Icon has park kind arch worth.
@@ -61,6 +65,8 @@ Icon has park theme value.
 Icon has park theme benefit.
 
 Icon has park theme marry.
+
+Icon has park theme land.
 
 Icon has park theme arch.
 
