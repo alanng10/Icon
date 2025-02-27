@@ -10,7 +10,7 @@ Icon has park benefit.
 
 Icon has park marry.
 
-Icon has park land. 
+Icon has park land.
 
 Icon has park arch.
 
