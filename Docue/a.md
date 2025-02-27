@@ -1,6 +1,6 @@
 # Icon
 
-Icon can be park icon.
+Icon is park icon.
 
 Icon has park worth.
 
