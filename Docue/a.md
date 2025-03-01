@@ -16,13 +16,21 @@ Icon has park arch.
 
 Icon has park arch worth.
 
-Icon has park size list.
+Icon has park kind.
 
-Icon has park color.
+Icon has park kind worth.
 
-Icon has park color hue.
+Icon has park kind value.
 
-Icon has park color saturate.
+Icon has park kind benefit.
+
+Icon has park kind marry.
+
+Icon has park kind land.
+
+Icon has park kind arch.
+
+Icon has park kind arch worth.
 
 Icon has park index.
 
@@ -40,22 +48,6 @@ Icon has park index arch.
 
 Icon has park index arch worth.
 
-Icon has park kind.
-
-Icon has park kind worth.
-
-Icon has park kind value.
-
-Icon has park kind benefit.
-
-Icon has park kind marry.
-
-Icon has park kind land.
-
-Icon has park kind arch.
-
-Icon has park kind arch worth.
-
 Icon has park theme.
 
 Icon has park theme worth.
@@ -71,6 +63,14 @@ Icon has park theme land.
 Icon has park theme arch.
 
 Icon has park theme arch worth.
+
+Icon has park size list.
+
+Icon has park color.
+
+Icon has park color hue.
+
+Icon has park color saturate.
 
 Icon has park detail.
 
