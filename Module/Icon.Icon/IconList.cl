@@ -103,6 +103,7 @@ class IconList : Any
         this.KindMedia : this.AddItem("KindMedia", false, true, false, false, false);
         this.KindOffice : this.AddItem("KindOffice", false, true, false, false, false);
         this.KindScience : this.AddItem("KindScience", false, true, false, false, false);
+        this.KindTech : this.AddItem("KindTech", false, true, false, false, false);
         this.KindVisual : this.AddItem("KindVisual", false, true, false, false, false);
         this.List : this.AddItem("List", true, false, false, false, false);
         this.Make : this.AddItem("Make", false, true, false, false, false);
@@ -276,6 +277,7 @@ class IconList : Any
     field prusate Icon KindMedia { get { return data; } set { data : value; } }
     field prusate Icon KindOffice { get { return data; } set { data : value; } }
     field prusate Icon KindScience { get { return data; } set { data : value; } }
+    field prusate Icon KindTech { get { return data; } set { data : value; } }
     field prusate Icon KindVisual { get { return data; } set { data : value; } }
     field prusate Icon List { get { return data; } set { data : value; } }
     field prusate Icon Make { get { return data; } set { data : value; } }
@@ -378,7 +380,7 @@ class IconList : Any
 
     field precate Array Array { get { return data; } set { data : value; } }
 
-    field precate Int ArrayCount { get { return 170; } set { } }
+    field precate Int ArrayCount { get { return 171; } set { } }
 
     field prusate Int Count { get { return data; } set { data : value; } }
 
