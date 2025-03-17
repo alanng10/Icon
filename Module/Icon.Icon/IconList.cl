@@ -71,24 +71,24 @@ class IconList : Any
         this.FormatTextColor : this.AddItem("FormatTextColor", true, false, false, false, false);
         this.Glob : this.AddItem("Glob", false, true, true, false, false);
         this.Globe : this.AddItem("Globe", true, false, false, false, false);
-        this.GoColEnd : this.AddItem("GoColEnd", false, true, false, false, false);
-        this.GoColEndS : this.AddItem("GoColEndS", true, false, false, false, false);
-        this.GoColNext : this.AddItem("GoColNext", false, true, true, false, false);
-        this.GoColNextS : this.AddItem("GoColNextS", true, false, false, false, false);
-        this.GoColPrev : this.AddItem("GoColPrev", false, true, true, false, false);
-        this.GoColPrevS : this.AddItem("GoColPrevS", true, false, false, false, false);
-        this.GoColStart : this.AddItem("GoColStart", false, true, false, false, false);
-        this.GoColStartS : this.AddItem("GoColStartS", true, false, false, false, false);
-        this.GoHome : this.AddItem("GoHome", false, true, false, false, false);
-        this.GoHomeS : this.AddItem("GoHomeS", true, false, false, false, false);
-        this.GoRowEnd : this.AddItem("GoRowEnd", false, true, false, false, false);
-        this.GoRowEndS : this.AddItem("GoRowEndS", true, false, false, false, false);
-        this.GoRowNext : this.AddItem("GoRowNext", false, true, true, false, false);
-        this.GoRowNextS : this.AddItem("GoRowNextS", true, false, false, false, false);
-        this.GoRowPrev : this.AddItem("GoRowPrev", false, true, true, false, false);
-        this.GoRowPrevS : this.AddItem("GoRowPrevS", true, false, false, false, false);
-        this.GoRowStart : this.AddItem("GoRowStart", false, true, false, false, false);
-        this.GoRowStartS : this.AddItem("GoRowStartS", true, false, false, false, false);
+        this.GoneColEnd : this.AddItem("GoneColEnd", false, true, false, false, false);
+        this.GoneColEndS : this.AddItem("GoneColEndS", true, false, false, false, false);
+        this.GoneColNext : this.AddItem("GoneColNext", false, true, false, false, false);
+        this.GoneColNextS : this.AddItem("GoneColNextS", true, false, false, false, false);
+        this.GoneColPrev : this.AddItem("GoneColPrev", false, true, false, false, false);
+        this.GoneColPrevS : this.AddItem("GoneColPrevS", true, false, false, false, false);
+        this.GoneColStart : this.AddItem("GoneColStart", false, true, false, false, false);
+        this.GoneColStartS : this.AddItem("GoneColStartS", true, false, false, false, false);
+        this.GoneHome : this.AddItem("GoneHome", false, true, false, false, false);
+        this.GoneHomeS : this.AddItem("GoneHomeS", true, false, false, false, false);
+        this.GoneRowEnd : this.AddItem("GoneRowEnd", false, true, false, false, false);
+        this.GoneRowEndS : this.AddItem("GoneRowEndS", true, false, false, false, false);
+        this.GoneRowNext : this.AddItem("GoneRowNext", false, true, false, false, false);
+        this.GoneRowNextS : this.AddItem("GoneRowNextS", true, false, false, false, false);
+        this.GoneRowPrev : this.AddItem("GoneRowPrev", false, true, false, false, false);
+        this.GoneRowPrevS : this.AddItem("GoneRowPrevS", true, false, false, false, false);
+        this.GoneRowStart : this.AddItem("GoneRowStart", false, true, false, false, false);
+        this.GoneRowStartS : this.AddItem("GoneRowStartS", true, false, false, false, false);
         this.Grid : this.AddItem("Grid", true, false, false, false, false);
         this.GridShownCol : this.AddItem("GridShownCol", true, false, false, false, false);
         this.GridShownRow : this.AddItem("GridShownRow", true, false, false, false, false);
@@ -141,10 +141,10 @@ class IconList : Any
         this.SelectAll : this.AddItem("SelectAll", true, false, false, false, false);
         this.SizeCol : this.AddItem("SizeCol", true, false, false, false, false);
         this.SizeRow : this.AddItem("SizeRow", true, false, false, false, false);
-        this.SortOrderAscend : this.AddItem("SortOrderAscend", true, false, false, false, false);
-        this.SortOrderDecend : this.AddItem("SortOrderDecend", true, false, false, false, false);
+        this.SortLessAscend : this.AddItem("SortLessAscend", true, false, false, false, false);
+        this.SortLessDecend : this.AddItem("SortLessDecend", true, false, false, false, false);
         this.SourceAdd : this.AddItem("SourceAdd", true, false, false, false, false);
-        this.SourceDiff : this.AddItem("SourceDiff", true, false, false, false, false);
+        this.SourceLess : this.AddItem("SourceLess", true, false, false, false, false);
         this.SourceRem : this.AddItem("SourceRem", true, false, false, false, false);
         this.Star : this.AddItem("Star", true, true, true, false, false);
         this.TableClose : this.AddItem("TableClose", true, false, false, false, false);
@@ -245,24 +245,24 @@ class IconList : Any
     field prusate Icon FormatTextColor { get { return data; } set { data : value; } }
     field prusate Icon Glob { get { return data; } set { data : value; } }
     field prusate Icon Globe { get { return data; } set { data : value; } }
-    field prusate Icon GoColEnd { get { return data; } set { data : value; } }
-    field prusate Icon GoColEndS { get { return data; } set { data : value; } }
-    field prusate Icon GoColNext { get { return data; } set { data : value; } }
-    field prusate Icon GoColNextS { get { return data; } set { data : value; } }
-    field prusate Icon GoColPrev { get { return data; } set { data : value; } }
-    field prusate Icon GoColPrevS { get { return data; } set { data : value; } }
-    field prusate Icon GoColStart { get { return data; } set { data : value; } }
-    field prusate Icon GoColStartS { get { return data; } set { data : value; } }
-    field prusate Icon GoHome { get { return data; } set { data : value; } }
-    field prusate Icon GoHomeS { get { return data; } set { data : value; } }
-    field prusate Icon GoRowEnd { get { return data; } set { data : value; } }
-    field prusate Icon GoRowEndS { get { return data; } set { data : value; } }
-    field prusate Icon GoRowNext { get { return data; } set { data : value; } }
-    field prusate Icon GoRowNextS { get { return data; } set { data : value; } }
-    field prusate Icon GoRowPrev { get { return data; } set { data : value; } }
-    field prusate Icon GoRowPrevS { get { return data; } set { data : value; } }
-    field prusate Icon GoRowStart { get { return data; } set { data : value; } }
-    field prusate Icon GoRowStartS { get { return data; } set { data : value; } }
+    field prusate Icon GoneColEnd { get { return data; } set { data : value; } }
+    field prusate Icon GoneColEndS { get { return data; } set { data : value; } }
+    field prusate Icon GoneColNext { get { return data; } set { data : value; } }
+    field prusate Icon GoneColNextS { get { return data; } set { data : value; } }
+    field prusate Icon GoneColPrev { get { return data; } set { data : value; } }
+    field prusate Icon GoneColPrevS { get { return data; } set { data : value; } }
+    field prusate Icon GoneColStart { get { return data; } set { data : value; } }
+    field prusate Icon GoneColStartS { get { return data; } set { data : value; } }
+    field prusate Icon GoneHome { get { return data; } set { data : value; } }
+    field prusate Icon GoneHomeS { get { return data; } set { data : value; } }
+    field prusate Icon GoneRowEnd { get { return data; } set { data : value; } }
+    field prusate Icon GoneRowEndS { get { return data; } set { data : value; } }
+    field prusate Icon GoneRowNext { get { return data; } set { data : value; } }
+    field prusate Icon GoneRowNextS { get { return data; } set { data : value; } }
+    field prusate Icon GoneRowPrev { get { return data; } set { data : value; } }
+    field prusate Icon GoneRowPrevS { get { return data; } set { data : value; } }
+    field prusate Icon GoneRowStart { get { return data; } set { data : value; } }
+    field prusate Icon GoneRowStartS { get { return data; } set { data : value; } }
     field prusate Icon Grid { get { return data; } set { data : value; } }
     field prusate Icon GridShownCol { get { return data; } set { data : value; } }
     field prusate Icon GridShownRow { get { return data; } set { data : value; } }
@@ -315,10 +315,10 @@ class IconList : Any
     field prusate Icon SelectAll { get { return data; } set { data : value; } }
     field prusate Icon SizeCol { get { return data; } set { data : value; } }
     field prusate Icon SizeRow { get { return data; } set { data : value; } }
-    field prusate Icon SortOrderAscend { get { return data; } set { data : value; } }
-    field prusate Icon SortOrderDecend { get { return data; } set { data : value; } }
+    field prusate Icon SortLessAscend { get { return data; } set { data : value; } }
+    field prusate Icon SortLessDecend { get { return data; } set { data : value; } }
     field prusate Icon SourceAdd { get { return data; } set { data : value; } }
-    field prusate Icon SourceDiff { get { return data; } set { data : value; } }
+    field prusate Icon SourceLess { get { return data; } set { data : value; } }
     field prusate Icon SourceRem { get { return data; } set { data : value; } }
     field prusate Icon Star { get { return data; } set { data : value; } }
     field prusate Icon TableClose { get { return data; } set { data : value; } }
