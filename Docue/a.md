@@ -95,3 +95,7 @@ Icon has park storage path.
 Icon has park format.
 
 Icon is did.
+
+Icon has major on park.
+
+Type has major on did.
