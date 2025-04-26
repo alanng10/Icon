@@ -98,4 +98,4 @@ Icon is did.
 
 Icon has major on park.
 
-Type has major on did.
+Icon has major on did.
