@@ -26,7 +26,7 @@ public class Gen : SourceGen
 
     protected override bool ExecuteItemList()
     {
-        this.ItemTable = this.ToolInfra.TableCreateStringLess();
+        this.ItemTable = this.TableCreateStringLess();
 
         String suffix;
         suffix = this.S(".png");
@@ -155,7 +155,7 @@ public class Gen : SourceGen
         this.ListInfra.Sort(array, less, range, copy);
 
         Table table;
-        table = this.ToolInfra.TableCreateStringLess();
+        table = this.TableCreateStringLess();
 
         i = 0;
 
@@ -193,7 +193,7 @@ public class Gen : SourceGen
             bool b;
             b = !(ka.Has.Get(i) == 0);
 
-            this.AddS(", ").Add(this.ToolInfra.StringBool(b));
+            this.AddS(", ").Add(this.StringBool(b));
 
             i = i + 1;
         }

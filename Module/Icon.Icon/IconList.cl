@@ -95,7 +95,7 @@ class IconList : Any
         this.History : this.AddItem("History", true, false, false, false, false);
         this.Home : this.AddItem("Home", true, true, true, false, false);
         this.Info : this.AddItem("Info", true, true, false, false, false);
-        this.Item : this.AddItem("Item", true, false, false, false, false);
+        this.Item : this.AddItem("Item", true, true, false, false, false);
         this.ItemAdd : this.AddItem("ItemAdd", true, true, false, false, false);
         this.ItemMod : this.AddItem("ItemMod", true, true, false, false, false);
         this.ItemRem : this.AddItem("ItemRem", true, true, false, false, false);
